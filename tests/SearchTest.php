@@ -3,6 +3,10 @@ declare(strict_types=1);
 
 namespace Technote\SearchHelper\Tests;
 
+/**
+ * Class SearchTest
+ * @package Technote\SearchHelper\Tests
+ */
 class SearchTest extends TestCase
 {
     /**

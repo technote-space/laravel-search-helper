@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as BaseTestCase;
 use Technote\SearchHelper\Providers\SearchHelperServiceProvider;
 
+/**
+ * Class TestCase
+ * @package Technote\SearchHelper\Tests
+ */
 class TestCase extends BaseTestCase
 {
     /**
