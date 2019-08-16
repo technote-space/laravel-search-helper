@@ -21,3 +21,4 @@
 /phpmd.xml export-ignore
 /phpcs.xml export-ignore
 /_config.yml export-ignore
+/.coveralls.yml export-ignore
