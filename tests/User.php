@@ -30,7 +30,7 @@ class User extends Model implements SearchableContract
      * @param  Builder  $query
      * @param  array  $conditions
      */
-    protected function setConditions(Builder $query, array $conditions)
+    protected static function setConditions(Builder $query, array $conditions)
     {
         if (! empty($conditions['s'])) {
             collect($conditions['s'])->each(function ($search) use ($query) {
@@ -46,7 +46,7 @@ class User extends Model implements SearchableContract
     /**
      * @return array
      */
-    protected function getSearchJoins(): array
+    protected static function getSearchJoins(): array
     {
         return [
             'user_details' => [
@@ -59,7 +59,7 @@ class User extends Model implements SearchableContract
     /**
      * @return array
      */
-    protected function getSearchOrderBy(): array
+    protected static function getSearchOrderBy(): array
     {
         return [
             'users.id' => 'desc',

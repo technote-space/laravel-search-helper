@@ -15,17 +15,17 @@ interface Searchable
     /**
      * @return array
      */
-    public function getSearchRules(): array;
+    public static function getSearchRules(): array;
 
     /**
      * @return array
      */
-    public function getSearchAttributes(): array;
+    public static function getSearchAttributes(): array;
 
     /**
      * @param  array  $conditions
      *
      * @return Model|Builder|\Technote\SearchHelper\Models\Traits\Searchable
      */
-    public function search(array $conditions);
+    public static function search(array $conditions);
 }
