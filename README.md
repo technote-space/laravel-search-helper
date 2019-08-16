@@ -19,55 +19,60 @@ composer require technote/laravel-search-helper
 ## Usage
 1. Implement Searchable contract and Searchable Trait.
 1. Implement `setConditions` function.  
-    ```php
-    <?php
-    use Illuminate\Database\Eloquent\Builder;
-    use Illuminate\Database\Eloquent\Model;
-    use Technote\SearchHelper\Models\Contracts\Searchable as SearchableContract;
-    use Technote\SearchHelper\Models\Traits\Searchable;
-    
-    /**
-     * Class Item
-     * @mixin Eloquent
-     */
-    class Item extends Model implements SearchableContract
-    {
-        use Searchable;
-    
-        /**
-         * @var array
-         */
-        protected $guarded = [
-            'id',
-        ];
-    
-        /**
-         * @param  Builder  $query
-         * @param  array  $conditions
-         */
-        protected static function setConditions(Builder $query, array $conditions)
-        {
-            if (! empty($conditions['s'])) {
-                collect($conditions['s'])->each(function ($search) use ($query) {
-                    $query->where(function ($builder) use ($search) {
-                        /** @var Builder $builder */
-                        $builder->where('items.name', 'like', "%{$search}%");
-                    });
-                });
-            }
-        }
-    }
-    ```
+   ```php
+   <?php
+   namespace App\Models;
+   
+   use Eloquent;
+   use Illuminate\Database\Eloquent\Builder;
+   use Illuminate\Database\Eloquent\Model;
+   use Technote\SearchHelper\Models\Contracts\Searchable as SearchableContract;
+   use Technote\SearchHelper\Models\Traits\Searchable;
+   
+   /**
+    * Class Item
+    * @mixin Eloquent
+    */
+   class Item extends Model implements SearchableContract
+   {
+       use Searchable;
+   
+       /**
+        * @var array
+        */
+       protected $guarded = [
+           'id',
+       ];
+   
+       /**
+        * @param  Builder  $query
+        * @param  array  $conditions
+        */
+       protected static function setConditions(Builder $query, array $conditions)
+       {
+           if (! empty($conditions['s'])) {
+               collect($conditions['s'])->each(function ($search) use ($query) {
+                   $query->where(function ($builder) use ($search) {
+                       /** @var Builder $builder */
+                       $builder->where('items.name', 'like', "%{$search}%");
+                   });
+               });
+           }
+       }
+   }
+   ```
 1. Call search function.
-    ```php
-    <?php
-    Item::search([
-        's' => [
-            'test',
-        ],
-        'ids' => [1, 2, 3],
-    ])->get();
-    ```
+   ```php
+   <?php
+   use App\Models\Item;
+   
+   Item::search([
+       's' => [
+           'test',
+       ],
+       'ids' => [1, 2, 3],
+   ])->get();
+   ```
 
 ## Author
 [GitHub (Technote)](https://github.com/technote-space)  
