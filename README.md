@@ -9,9 +9,16 @@
 
 Search helper for Laravel.
 
+[Packagist](https://packagist.org/packages/technote/laravel-search-helper)
+
+## Install
+```shell script
+composer require technote/laravel-search-helper
+```
+
 ## Usage
-1. Implement the Searchable contract and Searchable Trait.
-1. Implement the `setConditions` function.  
+1. Implement Searchable contract and Searchable Trait.
+1. Implement `setConditions` function.  
     ```php
     <?php
     use Illuminate\Database\Eloquent\Builder;
