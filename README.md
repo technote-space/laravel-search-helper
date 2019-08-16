@@ -51,7 +51,7 @@ Search helper for Laravel.
         }
     }
     ```
-1. test
+1. Call search function.
     ```php
     <?php
     Item::search([
