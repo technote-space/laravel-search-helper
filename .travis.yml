@@ -53,10 +53,6 @@ jobs:
 
     - stage: test
       language: php
-      php: '7.1'
-      script: bash bin/test/phpunit.sh
-    - stage: test
-      language: php
       php: '7.2'
       script: bash bin/test/phpunit.sh
     - stage: test

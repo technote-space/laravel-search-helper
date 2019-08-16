@@ -13,7 +13,7 @@ class SearchTest extends TestCase
      */
     public function testUserSearch(array $conditions, int $count)
     {
-        $this->assertCount($count, User::newModelInstance()->search($conditions)->get());
+        $this->assertCount($count, User::search($conditions)->get());
     }
 
     /**
@@ -24,7 +24,7 @@ class SearchTest extends TestCase
      */
     public function testItemSearch(array $conditions, int $count)
     {
-        $this->assertCount($count, Item::newModelInstance()->search($conditions)->get());
+        $this->assertCount($count, Item::search($conditions)->get());
     }
 
     /**

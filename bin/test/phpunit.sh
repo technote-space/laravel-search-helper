@@ -18,5 +18,5 @@ if [[ -n "${CI}" ]]; then
   ls -la "${TRAVIS_BUILD_DIR}"/coverage/clover.xml
   echo ""
   echo ">> Run composer coveralls"
-  composer coveralls-php
+  composer coveralls
 fi
