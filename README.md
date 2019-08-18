@@ -12,7 +12,7 @@ Search helper for Laravel.
 [Packagist](https://packagist.org/packages/technote/laravel-search-helper)
 
 ## Install
-```shell script
+```
 composer require technote/laravel-search-helper
 ```
 
