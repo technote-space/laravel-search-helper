@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace Technote\SearchHelper\Models\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 
 /**
  * Interface Searchable
@@ -25,7 +24,7 @@ interface Searchable
     /**
      * @param  array  $conditions
      *
-     * @return Model|Builder|\Technote\SearchHelper\Models\Traits\Searchable
+     * @return Builder|Searchable
      */
     public static function search(array $conditions);
 }

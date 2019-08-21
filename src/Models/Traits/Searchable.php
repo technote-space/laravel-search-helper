@@ -5,6 +5,7 @@ namespace Technote\SearchHelper\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use \Technote\SearchHelper\Models\Contracts\Searchable as SearchableContract;
 
 /**
  * Trait Searchable
@@ -43,7 +44,7 @@ trait Searchable
     /**
      * @param  array  $conditions
      *
-     * @return Model|Builder|Searchable
+     * @return Builder|SearchableContract
      */
     public static function search(array $conditions)
     {
