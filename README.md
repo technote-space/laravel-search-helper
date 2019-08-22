@@ -3,9 +3,8 @@
 [![Build Status](https://travis-ci.com/technote-space/laravel-search-helper.svg?branch=master)](https://travis-ci.com/technote-space/laravel-search-helper)
 [![Coverage Status](https://coveralls.io/repos/github/technote-space/laravel-search-helper/badge.svg?branch=master)](https://coveralls.io/github/technote-space/laravel-search-helper?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/laravel-search-helper/badge)](https://www.codefactor.io/repository/github/technote-space/laravel-search-helper)
-[![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![PHP: >=5.6](https://img.shields.io/badge/PHP-%3E%3D5.6-orange.svg)](http://php.net/)
-[![WordPress: >=5.0](https://img.shields.io/badge/WordPress-%3E%3D5.0-brightgreen.svg)](https://wordpress.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/technote-space/laravel-search-helper/blob/master/LICENSE)
+[![PHP: >=7.1.3](https://img.shields.io/badge/PHP-%3E%3D7.1.3-orange.svg)](http://php.net/)
 
 Search helper for Laravel.
 
