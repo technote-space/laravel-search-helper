@@ -11,6 +11,9 @@ Search helper for Laravel.
 
 [Packagist](https://packagist.org/packages/technote/laravel-search-helper)
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 ## Install
 ```
 composer require technote/laravel-search-helper
