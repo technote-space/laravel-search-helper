@@ -16,8 +16,8 @@
         }
     ],
     "require": {
-        "php": "^7.1.3",
-        "laravel/framework": "~5.8"
+        "php": "^7.2",
+        "laravel/framework": "*"
     },
     "autoload": {
         "psr-4": {
@@ -41,7 +41,6 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
         "fzaninotto/faker": "^1.8",
         "nunomaduro/collision": "^3.0",
-        "php-coveralls/php-coveralls": "^2.1",
         "phpmd/phpmd": "^2.6",
         "phpunit/phpunit": "^8.0",
         "squizlabs/php_codesniffer": "^3.4",
@@ -82,9 +81,6 @@
         ],
         "bin:phpunit": [
             "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/test/phpunit.sh"
-        ],
-        "coveralls": [
-            "php-coveralls -v"
         ],
         "gh-prepare": [
             "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_BUILD_STAGE_NAME=Deploy bash bin/prepare.sh"
