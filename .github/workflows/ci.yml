@@ -62,11 +62,6 @@ jobs:
       CI: 1
       TRAVIS_BUILD_DIR: ${{ github.workspace }}
       TRAVIS_BUILD_STAGE_NAME: Test
-    services:
-      mysql:
-        image: mysql
-        ports:
-          - 3306
     strategy:
       matrix:
         php: ['7.2', '7.3']
