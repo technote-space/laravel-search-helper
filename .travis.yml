@@ -23,18 +23,13 @@ branches:
     - master
     - "/^v[0-9\\.]+/"
 
-cache:
-  directories:
-    - "${HOME}/.composer/cache"
-    - "${TRAVIS_BUILD_DIR}/.work/cache"
+cache: yarn
 
 stages:
   - name: check
     if: branch = master and tag IS blank and type IN (pull_request, api)
   - name: test
     if: branch = master and tag IS blank and type IN (pull_request, api)
-  - name: deploy
-    if: tag IS present
 
 before_script:
   - bash bin/prepare.sh
@@ -59,23 +54,3 @@ jobs:
       language: php
       php: '7.3'
       script: bash bin/test/phpunit.sh
-
-    - stage: deploy
-      language: php
-      php: '7.2'
-      script: skip
-      before_deploy:
-        - source bin/deploy/env.sh
-        - bash bin/deploy/gh-releases.sh
-      deploy:
-        provider: releases
-        skip_cleanup: true
-        name: ${RELEASE_TITLE}
-        tag_name: ${RELEASE_TAG}
-        file: ${RELEASE_FILE}
-        body: ${RELEASE_BODY}
-        api_key:
-          secure: JOMSKXSTGPeWirfKE6mv4fpTMo+FVSdoMS3ARyBzmPbbqZp/+dPojhwr4SW1IMUrVcy0s4sUpBs2iMzfIV7QC/71gmXRALF7RZ0W8fslVOCCCdclhZHF/k+puuPIZEeSglPnRWgc5tWOIqA3N4yGOUf9ib1o2Irelhrsa2jfZaLFqNDjpqU9ZD5FwnVLQZPWXFVfHjvPOpO2aBE83z3Bf2yrpL1wDqufD+T0ZYN2D8Gjp+/zVp1p3XepFXzthok+j5iIHrrHXMeFUOb8t7N23w88bfq8Do1bocNv1URGRyS7XC04Vhcn5yKuaRYSuA5nM8DRd+23tJSSTUm9R8Gjmdz+GPE7epBcgPC+hxYPoKMbIL/TWrF9coDSV/pLAWPyAPsuu3tgwrte9txu++XX6YNSxn6hTKW/6vASY2KjMRy8uPllDFU5GkoSHl3pxY3CZ1Dby1aKdIjh7ONHpLqQ1cS41FocYzj+1GenlUns/Y3lr2OtmkQO8eewl8MRA3giiKXWYUcxC8lT7Hs6FoGcf8ht3W3s1A28GM6LCsO6h2Lbj2YfkTmsoJbQEPuAVJ7DIa/jo71JO0Q6Eo7cFAy3tRAhIW2KK7MeJ95sj+MHPElnI+vJVHOVJgmWQ8a3v+9J+G/H/mTe5hLeK7pLsvj7OclW6NLcwFBCZvTMTWcyhtM=
-        overwrite: true
-        on:
-          tags: true
