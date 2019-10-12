@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/technote-space/laravel-search-helper/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/laravel-search-helper)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/laravel-search-helper/badge)](https://www.codefactor.io/repository/github/technote-space/laravel-search-helper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/technote-space/laravel-search-helper/blob/master/LICENSE)
-[![PHP: >=7.1.3](https://img.shields.io/badge/PHP-%3E%3D7.1.3-orange.svg)](http://php.net/)
+[![PHP: >=7.2](https://img.shields.io/badge/PHP-%3E%3D7.2-orange.svg)](http://php.net/)
 
 Search helper for Laravel.
 
