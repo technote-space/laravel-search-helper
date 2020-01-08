@@ -55,11 +55,11 @@
             "@stage-test"
         ],
         "stage-lint": [
-            "@bin:phpcs",
-            "@bin:phpmd"
+            "@phpcs",
+            "@phpmd"
         ],
         "stage-test": [
-            "@bin:phpunit"
+            "@phpunit"
         ],
         "phpcs": [
             "phpcs --standard=./phpcs.xml"
@@ -72,22 +72,6 @@
         ],
         "phpunit:no": [
             "@phpunit --no-coverage"
-        ],
-        "bin:phpcs": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/check/phpcs.sh"
-        ],
-        "bin:phpmd": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/check/phpmd.sh"
-        ],
-        "bin:phpunit": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/test/phpunit.sh"
-        ],
-        "gh-prepare": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_BUILD_STAGE_NAME=Deploy bash bin/prepare.sh"
-        ],
-        "gh-releases": [
-            "@gh-prepare",
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) source bin/deploy/env.sh && bash bin/deploy/gh-releases.sh"
         ],
         "packages": [
             "rm -rdf vendor",
