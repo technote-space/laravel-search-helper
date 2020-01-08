@@ -60,6 +60,7 @@ trait Searchable
         $selectTables = collect();
         foreach (static::getSearchOrderBy() as $k => $v) {
             $query->orderByRaw("$k $v");
+            $matches = null;
             if (preg_match_all('#(\w+)\.\w+#', $k, $matches) > 0) {
                 $selectTables = $selectTables->concat($matches[1]);
             }
