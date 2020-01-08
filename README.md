@@ -1,6 +1,6 @@
 # Laravel Search Helper
 
-[![Build Status](https://github.com/technote-space/laravel-search-helper/workflows/Build/badge.svg)](https://github.com/technote-space/laravel-search-helper/actions)
+[![CI Status](https://github.com/technote-space/laravel-search-helper/workflows/CI/badge.svg)](https://github.com/technote-space/laravel-search-helper/actions)
 [![Build Status](https://travis-ci.com/technote-space/laravel-search-helper.svg?branch=master)](https://travis-ci.com/technote-space/laravel-search-helper)
 [![codecov](https://codecov.io/gh/technote-space/laravel-search-helper/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/laravel-search-helper)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/laravel-search-helper/badge)](https://www.codefactor.io/repository/github/technote-space/laravel-search-helper)

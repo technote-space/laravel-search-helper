@@ -3,7 +3,5 @@ Thumbs.db
 
 /coverage
 /vendor
-composer.lock
 .phpunit.result.cache
 /.work
-/release.zip

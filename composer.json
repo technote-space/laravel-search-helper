@@ -1,7 +1,7 @@
 {
     "name": "technote/laravel-search-helper",
     "type": "library",
-    "license": "GPL-2.0+",
+    "license": "MIT",
     "description": "Search helper for laravel",
     "homepage": "https://github.com/technote-space/laravel-search-helper",
     "keywords": [
@@ -39,12 +39,12 @@
     "require-dev": {
         "codedungeon/phpunit-result-printer": "^0.26.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-        "fzaninotto/faker": "^1.8",
+        "fzaninotto/faker": "^1.9",
         "nunomaduro/collision": "^3.0",
-        "phpmd/phpmd": "^2.7",
-        "phpunit/phpunit": "^8.4",
+        "phpmd/phpmd": "^2.8",
+        "phpunit/phpunit": "^8.5",
         "squizlabs/php_codesniffer": "^3.5",
-        "orchestra/testbench": "^4.2"
+        "orchestra/testbench": "^4.5"
     },
     "scripts": {
         "setup": [
@@ -55,39 +55,23 @@
             "@stage-test"
         ],
         "stage-lint": [
-            "@bin:phpcs",
-            "@bin:phpmd"
+            "@phpcs",
+            "@phpmd"
         ],
         "stage-test": [
-            "@bin:phpunit"
+            "@phpunit"
         ],
         "phpcs": [
             "phpcs --standard=./phpcs.xml"
         ],
         "phpmd": [
-            "phpmd ./src/,./tests/ text phpmd.xml"
+            "phpmd ./src/,./tests/ ansi phpmd.xml"
         ],
         "phpunit": [
             "phpunit --stop-on-failure --colors=always"
         ],
         "phpunit:no": [
             "@phpunit --no-coverage"
-        ],
-        "bin:phpcs": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/check/phpcs.sh"
-        ],
-        "bin:phpmd": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/check/phpmd.sh"
-        ],
-        "bin:phpunit": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) bash bin/test/phpunit.sh"
-        ],
-        "gh-prepare": [
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) TRAVIS_BUILD_STAGE_NAME=Deploy bash bin/prepare.sh"
-        ],
-        "gh-releases": [
-            "@gh-prepare",
-            "TRAVIS_BUILD_DIR=$(cd $(dirname $0); pwd) source bin/deploy/env.sh && bash bin/deploy/gh-releases.sh"
         ],
         "packages": [
             "rm -rdf vendor",
