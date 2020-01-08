@@ -32,7 +32,7 @@ stages:
     if: branch = master and tag IS blank and type IN (pull_request, api)
 
 before_script:
-  - bash bin/prepare.sh
+  - composer setup
 
 jobs:
   fast_finish: true
@@ -40,17 +40,17 @@ jobs:
     - stage: check
       language: php
       php: '7.2'
-      script: bash bin/check/phpcs.sh
+      script: composer phpcs
     - stage: check
       language: php
       php: '7.2'
-      script: bash bin/check/phpmd.sh
+      script: composer phpmd
 
     - stage: test
       language: php
       php: '7.2'
-      script: bash bin/test/phpunit.sh
+      script: composer phpunit
     - stage: test
       language: php
       php: '7.3'
-      script: bash bin/test/phpunit.sh
+      script: composer phpunit
