@@ -17,8 +17,8 @@ Laravel用検索ヘルパー
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Install](#install)
-- [Usage](#usage)
+- [インストール](#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+- [使用方法](#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 - [Author](#author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
