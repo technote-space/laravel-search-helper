@@ -27,8 +27,9 @@ composer require technote/laravel-search-helper
 ```
 
 ## Usage
-1. Implement Searchable contract and Searchable Trait.
-1. Implement `setConditions` function.  
+1. Implement `Searchable Contract` and `Searchable Trait`.
+1. Implement `setConditions` method.
+
    ```php
    <?php
    namespace App\Models;
@@ -71,7 +72,8 @@ composer require technote/laravel-search-helper
        }
    }
    ```
-1. Call search function.
+1. Call `search` method.
+
    ```php
    <?php
    use App\Models\Item;
