@@ -76,8 +76,10 @@ trait Searchable
     /**
      * @param  Builder  $query
      * @param  array  $conditions
+     *
+     * @return void
      */
-    private static function setIdConditions(Builder $query, array $conditions)
+    private static function setIdConditions(Builder $query, array $conditions): void
     {
         $table = (new static)->getTable();
         if (! empty($conditions['id'])) {
@@ -105,8 +107,10 @@ trait Searchable
     /**
      * @param  Builder  $builder
      * @param  array  $conditions
+     *
+     * @return void
      */
-    private static function setLimitConditions(Builder $builder, array $conditions)
+    private static function setLimitConditions(Builder $builder, array $conditions): void
     {
         if (! empty($conditions['count']) && $conditions['count'] > 0) {
             $builder->limit($conditions['count']);
@@ -140,8 +144,10 @@ trait Searchable
 
     /**
      * @param  Builder  $query
+     *
+     * @return void
      */
-    private static function joinTables(Builder $query)
+    private static function joinTables(Builder $query): void
     {
         $joined = [];
         foreach (static::getSearchJoins() as $table => $join) {
@@ -158,8 +164,10 @@ trait Searchable
      * @param  Builder  $query
      * @param  string  $table
      * @param  array  $join
+     *
+     * @return void
      */
-    private static function joinTable(Builder $query, string $table, array $join)
+    private static function joinTable(Builder $query, string $table, array $join): void
     {
         $query->join(
             $table,

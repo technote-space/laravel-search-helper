@@ -9,7 +9,7 @@
 
 *Read this in other languages: [English](README.md), [日本語](README.ja.md).*
 
-Search helper for Laravel.
+Laravel用検索ヘルパー
 
 [Packagist](https://packagist.org/packages/technote/laravel-search-helper)
 
@@ -17,20 +17,20 @@ Search helper for Laravel.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Install](#install)
-- [Usage](#usage)
+- [インストール](#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+- [使用方法](#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 - [Author](#author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Install
+## インストール
 ```
 composer require technote/laravel-search-helper
 ```
 
-## Usage
-1. Implement `Searchable Contract` and `Searchable Trait`.
-1. Implement `setConditions` method.
+## 使用方法
+1. `Searchable Contract` と `Searchable Trait` を実装
+1. `setConditions` メソッド を実装
 
    ```php
    <?php
@@ -60,8 +60,10 @@ composer require technote/laravel-search-helper
        /**
         * @param  Builder  $query
         * @param  array  $conditions
+        *
+        * @return void
         */
-       protected static function setConditions(Builder $query, array $conditions)
+       protected static function setConditions(Builder $query, array $conditions): void
        {
            if (! empty($conditions['s'])) {
                collect($conditions['s'])->each(function ($search) use ($query) {
@@ -74,7 +76,7 @@ composer require technote/laravel-search-helper
        }
    }
    ```
-1. Call `search` method.
+1. `search`メソッドを呼び出し
 
    ```php
    <?php
