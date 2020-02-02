@@ -5,3 +5,4 @@ Thumbs.db
 /vendor
 .phpunit.result.cache
 /.work
+/fixtures
