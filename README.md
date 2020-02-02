@@ -15,12 +15,14 @@ Search helper for Laravel.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+<details>
+<summary>Details</summary>
 
 - [Install](#install)
 - [Usage](#usage)
 - [Author](#author)
 
+</details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Install
