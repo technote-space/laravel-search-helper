@@ -89,9 +89,11 @@ trait Searchable
                 $query->where("{$table}.id", $conditions['id']);
             }
         }
+
         if (! empty($conditions['ids'])) {
             $query->whereIn("{$table}.id", $conditions['ids']);
         }
+
         if (! empty($conditions['not_id'])) {
             if (is_array($conditions['not_id'])) {
                 $conditions['not_ids'] = $conditions['not_id'];
@@ -99,6 +101,7 @@ trait Searchable
                 $query->where("{$table}.id", '!=', $conditions['not_id']);
             }
         }
+
         if (! empty($conditions['not_ids'])) {
             $query->whereNotIn("{$table}.id", $conditions['not_ids']);
         }
@@ -115,6 +118,7 @@ trait Searchable
         if (! empty($conditions['count']) && $conditions['count'] > 0) {
             $builder->limit($conditions['count']);
         }
+
         if (! empty($conditions['offset'])) {
             $builder->offset($conditions['offset']);
         }
@@ -151,11 +155,9 @@ trait Searchable
     {
         $joined = [];
         foreach (static::getSearchJoins() as $table => $join) {
-            if (! empty($join['first'])) {
-                if (empty($joined[$table])) {
-                    static::joinTable($query, $table, $join);
-                    $joined[$table] = true;
-                }
+            if (! empty($join['first']) && empty($joined[$table])) {
+                static::joinTable($query, $table, $join);
+                $joined[$table] = true;
             }
         }
     }
@@ -193,9 +195,9 @@ trait Searchable
                 if ('' === $value) {
                     unset($conditions[$key]);
                 } else {
-                    $conditions[$key] = collect(explode(' ', $value))->filter()->unique()->map(function ($value) {
+                    $conditions[$key] = collect(explode(' ', $value))->filter()->map(function ($value) {
                         return static::escapeLike($value);
-                    })->toArray();
+                    })->unique()->toArray();
                 }
             }
         }

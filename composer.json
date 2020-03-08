@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.3",
         "laravel/framework": "*"
     },
     "autoload": {
@@ -37,13 +37,13 @@
         }
     },
     "require-dev": {
-        "codedungeon/phpunit-result-printer": "^0.26.2",
+        "codedungeon/phpunit-result-printer": "^0.27.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
         "fzaninotto/faker": "^1.9",
         "phpmd/phpmd": "^2.8",
-        "phpunit/phpunit": "^8.5",
+        "phpunit/phpunit": "^9.0",
         "squizlabs/php_codesniffer": "^3.5",
-        "orchestra/testbench": "^4.6"
+        "orchestra/testbench": "^5.0"
     },
     "scripts": {
         "setup": [
