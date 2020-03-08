@@ -39,18 +39,18 @@ jobs:
   include:
     - stage: check
       language: php
-      php: '7.2'
+      php: '7.3'
       script: composer phpcs
     - stage: check
       language: php
-      php: '7.2'
+      php: '7.3'
       script: composer phpmd
 
     - stage: test
       language: php
-      php: '7.2'
+      php: '7.3'
       script: composer phpunit
     - stage: test
       language: php
-      php: '7.3'
+      php: '7.4'
       script: composer phpunit
