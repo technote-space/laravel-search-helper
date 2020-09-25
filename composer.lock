@@ -4491,22 +4491,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v5.5.0",
+            "version": "v5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "114de73d05d0ae3866967bdc345a4af02c44712a"
+                "reference": "09c2ca2eb9ebbaf687282fe1cc06f3ace44d7102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/114de73d05d0ae3866967bdc345a4af02c44712a",
-                "reference": "114de73d05d0ae3866967bdc345a4af02c44712a",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/09c2ca2eb9ebbaf687282fe1cc06f3ace44d7102",
+                "reference": "09c2ca2eb9ebbaf687282fe1cc06f3ace44d7102",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^7.24",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench-core": "^5.3",
+                "orchestra/testbench-core": "^5.4",
                 "php": ">=7.2.5",
                 "phpunit/phpunit": "^8.4 || ^9.0"
             },
@@ -4547,29 +4547,30 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2020-08-31T05:24:47+00:00"
+            "time": "2020-09-25T01:59:56+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v5.3.0",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "2a0d4686e5ad815f8fee5a36eeada0a3c4797e18"
+                "reference": "d73bb79208c4aa0754c99108bd5f9f025966428b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/2a0d4686e5ad815f8fee5a36eeada0a3c4797e18",
-                "reference": "2a0d4686e5ad815f8fee5a36eeada0a3c4797e18",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/d73bb79208c4aa0754c99108bd5f9f025966428b",
+                "reference": "d73bb79208c4aa0754c99108bd5f9f025966428b",
                 "shasum": ""
             },
             "require": {
                 "fzaninotto/faker": "^1.9.1",
-                "php": ">=7.2.5"
+                "php": ">=7.2.5",
+                "symfony/yaml": "^4.3 || ^5.0"
             },
             "require-dev": {
                 "laravel/framework": "^7.24",
-                "laravel/laravel": "dev-master",
+                "laravel/laravel": "7.x-dev",
                 "mockery/mockery": "^1.3.1",
                 "orchestra/canvas": "^5.0",
                 "phpunit/phpunit": "^8.4 || ^9.0"
@@ -4581,6 +4582,9 @@
                 "orchestra/testbench-dusk": "Allow using Laravel Dusk for testing (^5.0).",
                 "phpunit/phpunit": "Allow using PHPUnit for testing (^8.4 || ^9.0)."
             },
+            "bin": [
+                "testbench"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -4623,7 +4627,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2020-08-31T05:19:35+00:00"
+            "time": "2020-09-25T01:34:48+00:00"
         },
         {
             "name": "pdepend/pdepend",
