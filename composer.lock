@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cabacefca110aa0c540d80bf1d0b474f",
+    "content-hash": "4e102ebd545843cbfd9878afaad34834",
     "packages": [
         {
             "name": "brick/math",
@@ -3812,23 +3812,23 @@
         },
         {
             "name": "codedungeon/phpunit-result-printer",
-            "version": "0.29.3",
+            "version": "0.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikeerickson/phpunit-pretty-result-printer.git",
-                "reference": "4d075a3cb6574ee9466bd66b648aca8b2a967e4b"
+                "reference": "03a58b4c1911ef0c34a8ec3815dd830593a7e4cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikeerickson/phpunit-pretty-result-printer/zipball/4d075a3cb6574ee9466bd66b648aca8b2a967e4b",
-                "reference": "4d075a3cb6574ee9466bd66b648aca8b2a967e4b",
+                "url": "https://api.github.com/repos/mikeerickson/phpunit-pretty-result-printer/zipball/03a58b4c1911ef0c34a8ec3815dd830593a7e4cf",
+                "reference": "03a58b4c1911ef0c34a8ec3815dd830593a7e4cf",
                 "shasum": ""
             },
             "require": {
                 "2bj/phanybar": "^1.0",
                 "codedungeon/php-cli-colors": "^1.10.2",
                 "hassankhan/config": "^0.11.2|^1.0|^2.0",
-                "php": "^7.1",
+                "php": "^7.1 | ^8.0",
                 "symfony/yaml": "^2.7|^3.0|^4.0|^5.0"
             },
             "require-dev": {
@@ -3860,7 +3860,7 @@
                 "result-printer",
                 "testing"
             ],
-            "time": "2020-09-23T15:57:12+00:00"
+            "time": "2020-12-02T17:07:49+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -6547,16 +6547,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.1.6",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "e147a68cb66a8b510f4b7481fe4da5b2ab65ec6a"
+                "reference": "bb73619b2ae5121bbbcd9f191dfd53ded17ae598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/e147a68cb66a8b510f4b7481fe4da5b2ab65ec6a",
-                "reference": "e147a68cb66a8b510f4b7481fe4da5b2ab65ec6a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/bb73619b2ae5121bbbcd9f191dfd53ded17ae598",
+                "reference": "bb73619b2ae5121bbbcd9f191dfd53ded17ae598",
                 "shasum": ""
             },
             "require": {
@@ -6577,11 +6577,6 @@
                 "Resources/bin/yaml-lint"
             ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
@@ -6620,7 +6615,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-27T03:44:28+00:00"
+            "time": "2020-11-28T10:57:20+00:00"
         },
         {
             "name": "theseer/tokenizer",
