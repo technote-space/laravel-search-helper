@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8109b1695cb8526120f5b38bf268b909",
+    "content-hash": "5d60ed5ec5ff885c2533bc11a6d64051",
     "packages": [
         {
             "name": "brick/math",
@@ -434,16 +434,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.17.0",
+            "version": "v8.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "09bd79531d3f958f02fa34f1f14197b1716ef29b"
+                "reference": "b89363b540bd8ad6e727ee165b510a19fe170a28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/09bd79531d3f958f02fa34f1f14197b1716ef29b",
-                "reference": "09bd79531d3f958f02fa34f1f14197b1716ef29b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/b89363b540bd8ad6e727ee165b510a19fe170a28",
+                "reference": "b89363b540bd8ad6e727ee165b510a19fe170a28",
                 "shasum": ""
             },
             "require": {
@@ -597,7 +597,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-12-01T15:01:58+00:00"
+            "time": "2020-12-03T13:47:59+00:00"
         },
         {
             "name": "league/commonmark",
@@ -4089,16 +4089,16 @@
         },
         {
             "name": "codedungeon/php-cli-colors",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikeerickson/php-cli-colors.git",
-                "reference": "9f60ac692cc790755dad47b01c1d607fe5f43b94"
+                "reference": "cb32f427dc4206a8a2b3d14b7c8ad4fb7c884f75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikeerickson/php-cli-colors/zipball/9f60ac692cc790755dad47b01c1d607fe5f43b94",
-                "reference": "9f60ac692cc790755dad47b01c1d607fe5f43b94",
+                "url": "https://api.github.com/repos/mikeerickson/php-cli-colors/zipball/cb32f427dc4206a8a2b3d14b7c8ad4fb7c884f75",
+                "reference": "cb32f427dc4206a8a2b3d14b7c8ad4fb7c884f75",
                 "shasum": ""
             },
             "require-dev": {
@@ -4120,7 +4120,7 @@
                     "email": "codedungeon@gmail.com"
                 }
             ],
-            "description": "PHP Package for using color output in CLI commands",
+            "description": "Liven up you PHP Console Apps with standard colors",
             "homepage": "https://github.com/mikeerickson/php-cli-colors",
             "keywords": [
                 "color",
@@ -4131,29 +4131,29 @@
             ],
             "support": {
                 "issues": "https://github.com/mikeerickson/php-cli-colors/issues",
-                "source": "https://github.com/mikeerickson/php-cli-colors/tree/master"
+                "source": "https://github.com/mikeerickson/php-cli-colors/tree/1.12.0"
             },
-            "time": "2019-12-29T22:29:29+00:00"
+            "time": "2020-12-03T21:21:36+00:00"
         },
         {
             "name": "codedungeon/phpunit-result-printer",
-            "version": "0.29.3",
+            "version": "0.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikeerickson/phpunit-pretty-result-printer.git",
-                "reference": "4d075a3cb6574ee9466bd66b648aca8b2a967e4b"
+                "reference": "03a58b4c1911ef0c34a8ec3815dd830593a7e4cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikeerickson/phpunit-pretty-result-printer/zipball/4d075a3cb6574ee9466bd66b648aca8b2a967e4b",
-                "reference": "4d075a3cb6574ee9466bd66b648aca8b2a967e4b",
+                "url": "https://api.github.com/repos/mikeerickson/phpunit-pretty-result-printer/zipball/03a58b4c1911ef0c34a8ec3815dd830593a7e4cf",
+                "reference": "03a58b4c1911ef0c34a8ec3815dd830593a7e4cf",
                 "shasum": ""
             },
             "require": {
                 "2bj/phanybar": "^1.0",
                 "codedungeon/php-cli-colors": "^1.10.2",
                 "hassankhan/config": "^0.11.2|^1.0|^2.0",
-                "php": "^7.1",
+                "php": "^7.1 | ^8.0",
                 "symfony/yaml": "^2.7|^3.0|^4.0|^5.0"
             },
             "require-dev": {
@@ -4187,9 +4187,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mikeerickson/phpunit-pretty-result-printer/issues",
-                "source": "https://github.com/mikeerickson/phpunit-pretty-result-printer/tree/0.29.3"
+                "source": "https://github.com/mikeerickson/phpunit-pretty-result-printer/tree/0.30.0"
             },
-            "time": "2020-09-23T15:57:12+00:00"
+            "time": "2020-12-02T17:07:49+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -4695,16 +4695,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.2",
+            "version": "v4.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "658f1be311a230e0907f5dfe0213742aff0596de"
+                "reference": "dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/658f1be311a230e0907f5dfe0213742aff0596de",
-                "reference": "658f1be311a230e0907f5dfe0213742aff0596de",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984",
+                "reference": "dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984",
                 "shasum": ""
             },
             "require": {
@@ -4745,9 +4745,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.10.2"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.10.3"
             },
-            "time": "2020-09-26T10:30:38+00:00"
+            "time": "2020-12-03T17:45:45+00:00"
         },
         {
             "name": "orchestra/testbench",
@@ -5693,16 +5693,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.4.4",
+            "version": "9.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6535e637961f0829832621dc1b7308c2d24a799e"
+                "reference": "8e16c225d57c3d6808014df6b1dd7598d0a5bbbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6535e637961f0829832621dc1b7308c2d24a799e",
-                "reference": "6535e637961f0829832621dc1b7308c2d24a799e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e16c225d57c3d6808014df6b1dd7598d0a5bbbe",
+                "reference": "8e16c225d57c3d6808014df6b1dd7598d0a5bbbe",
                 "shasum": ""
             },
             "require": {
@@ -5718,7 +5718,7 @@
                 "phar-io/version": "^3.0.2",
                 "php": ">=7.3",
                 "phpspec/prophecy": "^1.12.1",
-                "phpunit/php-code-coverage": "^9.2",
+                "phpunit/php-code-coverage": "^9.2.3",
                 "phpunit/php-file-iterator": "^3.0.5",
                 "phpunit/php-invoker": "^3.1.1",
                 "phpunit/php-text-template": "^2.0.3",
@@ -5749,7 +5749,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "9.4-dev"
+                    "dev-master": "9.5-dev"
                 }
             },
             "autoload": {
@@ -5780,7 +5780,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.4.4"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.0"
             },
             "funding": [
                 {
@@ -5792,7 +5792,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-01T04:58:47+00:00"
+            "time": "2020-12-04T05:05:53+00:00"
         },
         {
             "name": "sebastian/cli-parser",
