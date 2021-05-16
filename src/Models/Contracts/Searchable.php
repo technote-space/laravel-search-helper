@@ -22,7 +22,7 @@ interface Searchable
     public static function getSearchAttributes(): array;
 
     /**
-     * @param  array  $conditions
+     * @param array $conditions
      *
      * @return Builder|Searchable
      */
