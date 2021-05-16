@@ -189,7 +189,7 @@ trait Searchable
     protected static function filterConditions(array $conditions): array
     {
         foreach ($conditions as $key => $value) {
-            if (in_array($key, static::$likeSearch)) {
+            if (in_array($key, static::$likeSearch, true)) {
                 $value = str_replace(['　', "\r", "\n"], ' ', $value);
                 $value = trim($value);
                 if ('' === $value) {
