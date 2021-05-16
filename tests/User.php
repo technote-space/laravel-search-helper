@@ -30,7 +30,7 @@ class User extends Model implements SearchableContract
      * @param Builder $query
      * @param array $conditions
      */
-    protected static function setConditions(Builder $query, array $conditions)
+    protected static function setConditions(Builder $query, array $conditions): void
     {
         if (!empty($conditions['s'])) {
             collect($conditions['s'])->each(function ($search) use ($query) {

@@ -15,9 +15,9 @@ class SearchTest extends TestCase
      * @param array $conditions
      * @param int $count
      */
-    public function testUserSearch(array $conditions, int $count)
+    public function testUserSearch(array $conditions, int $count): void
     {
-        $this->assertCount($count, User::search($conditions)->get());
+        self::assertCount($count, User::search($conditions)->get());
     }
 
     /**
@@ -26,15 +26,15 @@ class SearchTest extends TestCase
      * @param array $conditions
      * @param int $count
      */
-    public function testItemSearch(array $conditions, int $count)
+    public function testItemSearch(array $conditions, int $count): void
     {
-        $this->assertCount($count, Item::search($conditions)->get());
+        self::assertCount($count, Item::search($conditions)->get());
     }
 
     /**
      * @return array
      */
-    public function dataProviderForTestSearch()
+    public function dataProviderForTestSearch(): array
     {
         return [
             [[], 5],
