@@ -186,7 +186,7 @@ trait Searchable
      *
      * @return array
      */
-    protected static function filterConditions(array $conditions)
+    protected static function filterConditions(array $conditions): array
     {
         foreach ($conditions as $key => $value) {
             if (in_array($key, static::$likeSearch)) {
