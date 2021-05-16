@@ -42,15 +42,15 @@ trait Searchable
     }
 
     /**
-     * @param  array  $conditions
+     * @param array $conditions
      *
      * @return Builder|SearchableContract
      */
     public static function search(array $conditions)
     {
         $conditions = static::filterConditions($conditions);
-        $table      = (new static)->getTable();
-        $query      = static::query();
+        $table = (new static)->getTable();
+        $query = static::query();
 
         static::setIdConditions($query, $conditions);
         static::setLimitConditions($query, $conditions);
@@ -74,15 +74,15 @@ trait Searchable
     }
 
     /**
-     * @param  Builder  $query
-     * @param  array  $conditions
+     * @param Builder $query
+     * @param array $conditions
      *
      * @return void
      */
     private static function setIdConditions(Builder $query, array $conditions): void
     {
         $table = (new static)->getTable();
-        if (! empty($conditions['id'])) {
+        if (!empty($conditions['id'])) {
             if (is_array($conditions['id'])) {
                 $conditions['ids'] = $conditions['id'];
             } else {
@@ -90,11 +90,11 @@ trait Searchable
             }
         }
 
-        if (! empty($conditions['ids'])) {
+        if (!empty($conditions['ids'])) {
             $query->whereIn("{$table}.id", $conditions['ids']);
         }
 
-        if (! empty($conditions['not_id'])) {
+        if (!empty($conditions['not_id'])) {
             if (is_array($conditions['not_id'])) {
                 $conditions['not_ids'] = $conditions['not_id'];
             } else {
@@ -102,31 +102,31 @@ trait Searchable
             }
         }
 
-        if (! empty($conditions['not_ids'])) {
+        if (!empty($conditions['not_ids'])) {
             $query->whereNotIn("{$table}.id", $conditions['not_ids']);
         }
     }
 
     /**
-     * @param  Builder  $builder
-     * @param  array  $conditions
+     * @param Builder $builder
+     * @param array $conditions
      *
      * @return void
      */
     private static function setLimitConditions(Builder $builder, array $conditions): void
     {
-        if (! empty($conditions['count']) && $conditions['count'] > 0) {
+        if (!empty($conditions['count']) && $conditions['count'] > 0) {
             $builder->limit($conditions['count']);
         }
 
-        if (! empty($conditions['offset'])) {
+        if (!empty($conditions['offset'])) {
             $builder->offset($conditions['offset']);
         }
     }
 
     /**
-     * @param  Builder  $query
-     * @param  array  $conditions
+     * @param Builder $query
+     * @param array $conditions
      */
     abstract protected static function setConditions(Builder $query, array $conditions);
 
@@ -147,7 +147,7 @@ trait Searchable
     }
 
     /**
-     * @param  Builder  $query
+     * @param Builder $query
      *
      * @return void
      */
@@ -155,7 +155,7 @@ trait Searchable
     {
         $joined = [];
         foreach (static::getSearchJoins() as $table => $join) {
-            if (! empty($join['first']) && empty($joined[$table])) {
+            if (!empty($join['first']) && empty($joined[$table])) {
                 static::joinTable($query, $table, $join);
                 $joined[$table] = true;
             }
@@ -163,9 +163,9 @@ trait Searchable
     }
 
     /**
-     * @param  Builder  $query
-     * @param  string  $table
-     * @param  array  $join
+     * @param Builder $query
+     * @param string $table
+     * @param array $join
      *
      * @return void
      */
@@ -182,7 +182,7 @@ trait Searchable
     }
 
     /**
-     * @param  array  $conditions
+     * @param array $conditions
      *
      * @return array
      */
@@ -206,7 +206,7 @@ trait Searchable
     }
 
     /**
-     * @param  string  $string
+     * @param string $string
      *
      * @return string
      */

@@ -26,12 +26,12 @@ class Item extends Model implements SearchableContract
     ];
 
     /**
-     * @param  Builder  $query
-     * @param  array  $conditions
+     * @param Builder $query
+     * @param array $conditions
      */
     protected static function setConditions(Builder $query, array $conditions)
     {
-        if (! empty($conditions['s'])) {
+        if (!empty($conditions['s'])) {
             collect($conditions['s'])->each(function ($search) use ($query) {
                 $query->where(function ($builder) use ($search) {
                     /** @var Builder $builder */

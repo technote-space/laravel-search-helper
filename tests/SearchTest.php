@@ -12,8 +12,8 @@ class SearchTest extends TestCase
     /**
      * @dataProvider dataProviderForTestSearch
      *
-     * @param  array  $conditions
-     * @param  int  $count
+     * @param array $conditions
+     * @param int $count
      */
     public function testUserSearch(array $conditions, int $count)
     {
@@ -23,8 +23,8 @@ class SearchTest extends TestCase
     /**
      * @dataProvider dataProviderForTestSearch
      *
-     * @param  array  $conditions
-     * @param  int  $count
+     * @param array $conditions
+     * @param int $count
      */
     public function testItemSearch(array $conditions, int $count)
     {
@@ -70,7 +70,7 @@ class SearchTest extends TestCase
             ],
             [
                 [
-                    'count'  => 10,
+                    'count' => 10,
                     'offset' => 3,
                 ],
                 2,

@@ -18,19 +18,19 @@ use Technote\SearchHelper\Providers\SearchHelperServiceProvider;
 class TestCase extends BaseTestCase
 {
     /**
-     * @param  Application  $app
+     * @param Application $app
      */
     protected function getEnvironmentSetUp($app)
     {
         $app['config']->set('database.default', 'test');
         $app['config']->set('database.connections.test', [
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
         ]);
     }
 
     /**
-     * @param  Application  $app
+     * @param Application $app
      *
      * @return array
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
@@ -97,14 +97,14 @@ class TestCase extends BaseTestCase
     private function userDetailFactory(User $user, string $name, string $address, Generator $faker)
     {
         UserDetail::create([
-            'user_id'   => $user->id,
-            'name'      => $name,
+            'user_id' => $user->id,
+            'name' => $name,
             'name_kana' => $faker->kanaName,
-            'zip_code'  => substr_replace($faker->postcode, '-', 3, 0),
-            'address'   => $address,
-            'phone'     => '0'.$faker->numberBetween(10, 99).'-'.$faker->numberBetween(10, 9999).'-'.$faker->numberBetween(100, 9999),
-            'email'     => $faker->email,
-            'age'       => $faker->numberBetween(0, 100),
+            'zip_code' => substr_replace($faker->postcode, '-', 3, 0),
+            'address' => $address,
+            'phone' => '0' . $faker->numberBetween(10, 99) . '-' . $faker->numberBetween(10, 9999) . '-' . $faker->numberBetween(100, 9999),
+            'email' => $faker->email,
+            'age' => $faker->numberBetween(0, 100),
         ]);
     }
 
