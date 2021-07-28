@@ -37,7 +37,7 @@
         }
     },
     "require-dev": {
-        "codedungeon/phpunit-result-printer": "^0.30.1",
+        "codedungeon/phpunit-result-printer": "^0.30.1 || ^0.31.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "fakerphp/faker": "^1.14",
         "phpmd/phpmd": "^2.10",
