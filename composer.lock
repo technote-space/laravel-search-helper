@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bee194a6305dd067b94cd077a132f8e2",
+    "content-hash": "731f5fad3dd8a51240a55d8123f9cceb",
     "packages": [
         {
             "name": "brick/math",
@@ -60,16 +60,16 @@
         },
         {
             "name": "dflydev/dot-access-data",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dflydev/dflydev-dot-access-data.git",
-                "reference": "e04ff030d24a33edc2421bef305e32919dd78fc3"
+                "reference": "0992cc19268b259a39e86f296da5f0677841f42c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/e04ff030d24a33edc2421bef305e32919dd78fc3",
-                "reference": "e04ff030d24a33edc2421bef305e32919dd78fc3",
+                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/0992cc19268b259a39e86f296da5f0677841f42c",
+                "reference": "0992cc19268b259a39e86f296da5f0677841f42c",
                 "shasum": ""
             },
             "require": {
@@ -127,7 +127,7 @@
                 "dot",
                 "notation"
             ],
-            "time": "2021-01-01T22:08:42+00:00"
+            "time": "2021-08-13T13:06:58+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -481,16 +481,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.53.1",
+            "version": "v8.54.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "5df423c2790f32b26baee90518bb659572aa404f"
+                "reference": "7b88554cd1aeb52b7f82689bf244182e7a81894b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/5df423c2790f32b26baee90518bb659572aa404f",
-                "reference": "5df423c2790f32b26baee90518bb659572aa404f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7b88554cd1aeb52b7f82689bf244182e7a81894b",
+                "reference": "7b88554cd1aeb52b7f82689bf244182e7a81894b",
                 "shasum": ""
             },
             "require": {
@@ -641,7 +641,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2021-08-05T14:04:08+00:00"
+            "time": "2021-08-10T14:25:51+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1674,16 +1674,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "7231612a5221f5524d3575bebdce20eeef8547a1"
+                "reference": "fe665a03df4f056aa65af552a96e1976df8c8dae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/7231612a5221f5524d3575bebdce20eeef8547a1",
-                "reference": "7231612a5221f5524d3575bebdce20eeef8547a1",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/fe665a03df4f056aa65af552a96e1976df8c8dae",
+                "reference": "fe665a03df4f056aa65af552a96e1976df8c8dae",
                 "shasum": ""
             },
             "require": {
@@ -1763,7 +1763,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-06T22:30:43+00:00"
+            "time": "2021-08-11T01:06:55+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5007,22 +5007,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v6.19.0",
+            "version": "v6.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "4e3ee38295d793f0d4864203d5e1f0b952635d1b"
+                "reference": "b9f7b932a5533739effa7c0da8a54d9217476c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/4e3ee38295d793f0d4864203d5e1f0b952635d1b",
-                "reference": "4e3ee38295d793f0d4864203d5e1f0b952635d1b",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/b9f7b932a5533739effa7c0da8a54d9217476c24",
+                "reference": "b9f7b932a5533739effa7c0da8a54d9217476c24",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^8.26",
+                "laravel/framework": "^8.54",
                 "mockery/mockery": "^1.4.2",
-                "orchestra/testbench-core": "^6.23",
+                "orchestra/testbench-core": "^6.24",
                 "php": "^7.3 || ^8.0",
                 "phpunit/phpunit": "^8.4 || ^9.3.3",
                 "spatie/laravel-ray": "^1.18"
@@ -5064,20 +5064,20 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2021-07-01T02:50:07+00:00"
+            "time": "2021-08-12T00:53:59+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v6.23.1",
+            "version": "v6.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "239bc0d99ae44f76c024e74ced0fc5aabfa00be3"
+                "reference": "fdd33d553480ff2192755806fca641bcd79ab04b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/239bc0d99ae44f76c024e74ced0fc5aabfa00be3",
-                "reference": "239bc0d99ae44f76c024e74ced0fc5aabfa00be3",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/fdd33d553480ff2192755806fca641bcd79ab04b",
+                "reference": "fdd33d553480ff2192755806fca641bcd79ab04b",
                 "shasum": ""
             },
             "require": {
@@ -5087,7 +5087,7 @@
                 "vlucas/phpdotenv": "^5.1"
             },
             "require-dev": {
-                "laravel/framework": "^8.26",
+                "laravel/framework": "^8.54",
                 "laravel/laravel": "8.x-dev",
                 "mockery/mockery": "^1.4.2",
                 "orchestra/canvas": "^6.1",
@@ -5096,7 +5096,7 @@
                 "symfony/process": "^5.0"
             },
             "suggest": {
-                "laravel/framework": "Required for testing (^8.26).",
+                "laravel/framework": "Required for testing (^8.54).",
                 "mockery/mockery": "Allow using Mockery for testing (^1.4.2).",
                 "orchestra/testbench-browser-kit": "Allow using legacy Laravel BrowserKit for testing (^6.0).",
                 "orchestra/testbench-dusk": "Allow using Laravel Dusk for testing (^6.0).",
@@ -5147,7 +5147,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2021-07-14T02:34:48+00:00"
+            "time": "2021-08-12T00:45:07+00:00"
         },
         {
             "name": "pdepend/pdepend",
