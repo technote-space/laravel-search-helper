@@ -485,16 +485,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.55.0",
+            "version": "v8.57.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "997e2aa23e9103137715018ae926c52f8a1703f2"
+                "reference": "6de01746680d7bc7e239b20ec5cdfe70ce586235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/997e2aa23e9103137715018ae926c52f8a1703f2",
-                "reference": "997e2aa23e9103137715018ae926c52f8a1703f2",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6de01746680d7bc7e239b20ec5cdfe70ce586235",
+                "reference": "6de01746680d7bc7e239b20ec5cdfe70ce586235",
                 "shasum": ""
             },
             "require": {
@@ -645,7 +645,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2021-08-17T14:13:34+00:00"
+            "time": "2021-08-27T13:34:11+00:00"
         },
         {
             "name": "league/commonmark",
@@ -5011,22 +5011,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v6.20.0",
+            "version": "v6.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "b9f7b932a5533739effa7c0da8a54d9217476c24"
+                "reference": "986ff30846bca4547cf11ed422511673450dcb02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/b9f7b932a5533739effa7c0da8a54d9217476c24",
-                "reference": "b9f7b932a5533739effa7c0da8a54d9217476c24",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/986ff30846bca4547cf11ed422511673450dcb02",
+                "reference": "986ff30846bca4547cf11ed422511673450dcb02",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^8.54",
                 "mockery/mockery": "^1.4.2",
-                "orchestra/testbench-core": "^6.24",
+                "orchestra/testbench-core": "^6.24.1",
                 "php": "^7.3 || ^8.0",
                 "phpunit/phpunit": "^8.4 || ^9.3.3",
                 "spatie/laravel-ray": "^1.18"
@@ -5068,20 +5068,20 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2021-08-12T00:53:59+00:00"
+            "time": "2021-08-25T05:23:48+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v6.24.0",
+            "version": "v6.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "fdd33d553480ff2192755806fca641bcd79ab04b"
+                "reference": "0e77a2e62cf9be1e541cb44f65d3ac4774015c87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/fdd33d553480ff2192755806fca641bcd79ab04b",
-                "reference": "fdd33d553480ff2192755806fca641bcd79ab04b",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/0e77a2e62cf9be1e541cb44f65d3ac4774015c87",
+                "reference": "0e77a2e62cf9be1e541cb44f65d3ac4774015c87",
                 "shasum": ""
             },
             "require": {
@@ -5151,7 +5151,7 @@
                     "type": "liberapay"
                 }
             ],
-            "time": "2021-08-12T00:45:07+00:00"
+            "time": "2021-08-25T05:01:24+00:00"
         },
         {
             "name": "pdepend/pdepend",
@@ -7095,16 +7095,16 @@
         },
         {
             "name": "spatie/laravel-ray",
-            "version": "1.24.2",
+            "version": "1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ray.git",
-                "reference": "375881d1ec77a367cae75014a282e688666f51bc"
+                "reference": "fc36d2f77e7258c0e443e9db1923b725d3ff3c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ray/zipball/375881d1ec77a367cae75014a282e688666f51bc",
-                "reference": "375881d1ec77a367cae75014a282e688666f51bc",
+                "url": "https://api.github.com/repos/spatie/laravel-ray/zipball/fc36d2f77e7258c0e443e9db1923b725d3ff3c0e",
+                "reference": "fc36d2f77e7258c0e443e9db1923b725d3ff3c0e",
                 "shasum": ""
             },
             "require": {
@@ -7124,6 +7124,7 @@
                 "guzzlehttp/guzzle": "^7.3",
                 "laravel/framework": "^7.20|^8.19",
                 "orchestra/testbench-core": "^5.0|^6.0",
+                "phpstan/phpstan": "^0.12.93",
                 "phpunit/phpunit": "^9.3",
                 "spatie/phpunit-snapshot-assertions": "^4.2"
             },
@@ -7168,7 +7169,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2021-07-23T16:50:57+00:00"
+            "time": "2021-08-27T08:41:55+00:00"
         },
         {
             "name": "spatie/macroable",
