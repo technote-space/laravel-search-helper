@@ -477,16 +477,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.75.0",
+            "version": "v8.76.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0bb91d3176357da232da69762a64b0e0a0988637"
+                "reference": "c67acfdc968f487b6235435080eef62a7e2ed055"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0bb91d3176357da232da69762a64b0e0a0988637",
-                "reference": "0bb91d3176357da232da69762a64b0e0a0988637",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c67acfdc968f487b6235435080eef62a7e2ed055",
+                "reference": "c67acfdc968f487b6235435080eef62a7e2ed055",
                 "shasum": ""
             },
             "require": {
@@ -641,7 +641,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2021-12-07T14:55:46+00:00"
+            "time": "2021-12-15T14:02:14+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -4052,16 +4052,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.4.0",
+            "version": "v5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "d4394d044ed69a8f244f3445bcedf8a0d7fe2403"
+                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/d4394d044ed69a8f244f3445bcedf8a0d7fe2403",
-                "reference": "d4394d044ed69a8f244f3445bcedf8a0d7fe2403",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/264dce589e7ce37a7ba99cb901eed8249fbec92f",
+                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f",
                 "shasum": ""
             },
             "require": {
@@ -4099,11 +4099,13 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 },
                 {
                     "name": "Vance Lucas",
-                    "email": "vance@vancelucas.com"
+                    "email": "vance@vancelucas.com",
+                    "homepage": "https://github.com/vlucas"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -4122,7 +4124,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-10T01:08:39+00:00"
+            "time": "2021-12-12T23:22:04+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -5554,16 +5556,16 @@
         },
         {
             "name": "phpmd/phpmd",
-            "version": "2.11.0",
+            "version": "2.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmd/phpmd.git",
-                "reference": "3637949092e6471aeaeca66bc6c016f45e459e24"
+                "reference": "08b60a2eb7e14c23f46ff8865b510ae08b75d0fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/3637949092e6471aeaeca66bc6c016f45e459e24",
-                "reference": "3637949092e6471aeaeca66bc6c016f45e459e24",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/08b60a2eb7e14c23f46ff8865b510ae08b75d0fd",
+                "reference": "08b60a2eb7e14c23f46ff8865b510ae08b75d0fd",
                 "shasum": ""
             },
             "require": {
@@ -5628,7 +5630,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-29T14:05:52+00:00"
+            "time": "2021-12-17T11:25:43+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -7437,16 +7439,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e"
+                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f268ca40d54617c6e06757f83f699775c9b3ff2e",
-                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5e4e71592f69da17871dba6e80dd51bce74a351a",
+                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a",
                 "shasum": ""
             },
             "require": {
@@ -7484,7 +7486,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2021-10-11T04:00:11+00:00"
+            "time": "2021-12-12T21:44:58+00:00"
         },
         {
             "name": "symfony/config",
