@@ -40,7 +40,7 @@
         "codedungeon/phpunit-result-printer": "^0.32.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
         "fakerphp/faker": "^1.19",
-        "phpmd/phpmd": "^2.11",
+        "phpmd/phpmd": "^2.12",
         "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "^3.6",
         "orchestra/testbench": "^6.24"
