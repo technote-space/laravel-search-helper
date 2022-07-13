@@ -37,12 +37,12 @@
         }
     },
     "require-dev": {
-        "codedungeon/phpunit-result-printer": "^0.31.0",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-        "fakerphp/faker": "^1.18",
-        "phpmd/phpmd": "^2.11",
+        "codedungeon/phpunit-result-printer": "^0.32.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "fakerphp/faker": "^1.19",
+        "phpmd/phpmd": "^2.12",
         "phpunit/phpunit": "^9.5",
-        "squizlabs/php_codesniffer": "^3.6",
+        "squizlabs/php_codesniffer": "^3.7",
         "orchestra/testbench": "^6.24"
     },
     "scripts": {
